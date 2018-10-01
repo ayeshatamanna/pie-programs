@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- including jQuery-->
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> <!-- including jQuery validate plugin-->
+	<script src="formVal.js"></script> <!-- including jQuery validation file-->
+	<link rel="stylesheet" href="name/jquery-ui.min.css">
+	<script src="name/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="name/jquery-ui.structure.min.css">
+  	<link rel="stylesheet" href="name/jquery-ui.theme.min.css">
+  	<link rel="stylesheet" href="date/jquery-ui.min.css">
+	<script src="date/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="date/jquery-ui.structure.min.css">
+  	<link rel="stylesheet" href="date/jquery-ui.theme.min.css">
+  	<link rel="stylesheet" href="gender/jquery-ui.min.css">
+	<script src="gender/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="gender/jquery-ui.structure.min.css">
+  	<link rel="stylesheet" href="gender/jquery-ui.theme.min.css">
+  	<link rel="stylesheet" href="blood/jquery-ui.min.css">
+	<script src="blood/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="blood/jquery-ui.structure.min.css">
+  	<link rel="stylesheet" href="blood/jquery-ui.theme.min.css">
+  	<link rel="stylesheet" href="button/jquery-ui.min.css">
+	<script src="button/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="button/jquery-ui.structure.min.css">
+  	<link rel="stylesheet" href="button/jquery-ui.theme.min.css">
+	<style>
+		form .error {
+  			color: #ff0000;
+  			font-family:verdana, Helvetica;
+		}
+
+		#blood-type-button {
+      width: 120px;
+    }
+	</style>
+
+</head>
+<body>
+	<div align="center">
+		<h2>Registration</h2>
+
+		<form action="" name="Registration">
+		  <table>
+		    <tr colspan="3">
+		      <th>PERSONAL PROFILE</th>
+		    </tr>
+		    <tr>
+		      <td>Name</td>
+		      <td><input type="text" name="name" id="name"></td>
+		    </tr>
+		    <tr>
+		      <td>Email</td>
+		      <td><input type="email" name="email" id="email"></td>
+		    </tr>
+		    <tr>
+		      <td>Gender</td>
+		      <td>
+		      	<p class="container">
+		      	<input type="radio" name="gender" id="m"> Male
+		    	<input type="radio" name="gender" id="f"> Female
+		    	<input type="radio" name="gender" id="o"> Other</p>
+		      </td>
+		    </tr>
+		    <tr>
+		      <td>Date of Birth</td>
+		      <td><input type="text" name="date" id="datepicker"></td>
+		    </tr>
+		    <tr>
+		      <td>Blood Group</td>
+		      <td>
+		      	<select name="blood" id="blood-type">
+				    <option value="A+" id="a+">A+</option>
+				    <option value="B+" id="b+">B+</option>
+				    <option value="O+" id="o+">O+</option>
+		  		</select>
+		  	  </td>
+		    </tr>
+		    <tr>
+		      <td>Degree</td>
+		      <td>
+		      	<input type="checkbox" name="degree" value="SSC" id="ssc">SSC
+		    	<input type="checkbox" name="degree" value="HSC" id="hsc">HSC
+		    	<input type="checkbox" name="degree" value="BSc" id="bsc">BSc.
+		    	<input type="checkbox" name="degree" value="MSc" id="msc">MSc.
+		      </td>
+		    </tr>
+		    <tr>
+		    <td>Photo</td>
+		    <td>
+		      <input type="file" name="fileToUpload" id="fileToUpload">
+		    </td>
+		    </tr>
+		    <tr align="right">
+		    <td class="widget">
+			    <button>Submit</button>
+			    <input type="reset">
+		    </td>
+		    </tr>
+		  </table>
+		</form>
+	</div>
+
+	<script>
+  var nameList = [
+      "Ayesha",
+      "Akhter",
+      "Tamanna",
+      "Ridhrita"
+    ];
+</script>
+</body>
+</html>
